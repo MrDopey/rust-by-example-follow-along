@@ -6,10 +6,11 @@
 // This code is editable, feel free to hack it!
 // You can always return to the original code by clicking the "Reset" button ->
 
+mod HelloWorld;
+
 // This is the main function.
+/// This prints for the docs
 fn main() {
-    // Statements here are executed when the compiled binary is called.
-  
-    // Print text to the console.
-    println!("Hello World!");
-  }
+
+  HelloWorld::chapter_one();
+}
