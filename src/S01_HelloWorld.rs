@@ -1,20 +1,15 @@
-use std::fmt::{self, Display};
+use std::{fmt::{self, Display}};
 
 pub fn chapter_one() {
   // hello_word();
   // positional_args();
   // playing_with_structs();
   // params_and_display();
-  custom_display_function();
-} 
-
-fn hello_word() {
-    // Statements here are executed when the compiled binary is called.
-  
-    // Print text to the console.
-    println!("Hello World!");
-    println!("I'm a Rustacean!");
+  // custom_display_function();
+  testcase_list();
 }
+
+
 
 fn positional_args() {
   
@@ -138,3 +133,32 @@ fn custom_display_function() {
 
 
 }
+fn testcase_list() {
+    // Define a structure named `List` containing a `Vec`.
+  struct List(Vec<i32>);
+
+  impl fmt::Display for List {
+      fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+          // Extract the value using tuple indexing,
+          // and create a reference to `vec`.
+          let vec = &self.0;
+
+          write!(f, "[")?;
+
+          // Iterate over `v` in `vec` while enumerating the iteration
+          // count in `count`.
+          for (count, v) in vec.iter().enumerate() {
+              // For every element except the first, add a comma.
+              // Use the ? operator to return on errors.
+              if count != 0 { write!(f, ", ")?;}
+              write!(f, "{}: {}", count, v)?;
+          }
+
+          // Close the opened bracket and return a fmt::Result value.
+          write!(f, "]")
+      }
+  }
+
+  let v = List(vec![1, 2, 3]);
+  println!("{}", v)
+} 

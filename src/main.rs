@@ -6,11 +6,11 @@
 // This code is editable, feel free to hack it!
 // You can always return to the original code by clicking the "Reset" button ->
 
-mod HelloWorld;
+mod S01_HelloWorld;
 
 // This is the main function.
 /// This prints for the docs
 fn main() {
 
-  HelloWorld::chapter_one();
+  S01_HelloWorld::chapter_one();
 }
