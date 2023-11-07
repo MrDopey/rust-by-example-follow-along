@@ -7,10 +7,12 @@
 // You can always return to the original code by clicking the "Reset" button ->
 
 mod S01_HelloWorld;
+mod S02_Primitives;
 
 // This is the main function.
 /// This prints for the docs
 fn main() {
 
-  S01_HelloWorld::chapter_one();
+  // S01_HelloWorld::chapter_one();
+  S02_Primitives::chapter_two();
 }
