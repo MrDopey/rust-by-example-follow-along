@@ -8,11 +8,14 @@
 
 mod S01_HelloWorld;
 mod S02_Primitives;
+mod S03_CustomTypes;
 
-// This is the main function.
+
+// This is the main function.:q
 /// This prints for the docs
 fn main() {
 
   // S01_HelloWorld::chapter_one();
-  S02_Primitives::chapter_two();
+  // S02_Primitives::chapter_two();
+ S03_CustomTypes::chapter_three(); 
 }

@@ -1,3 +1,6 @@
+// An attribute to hide warnings for unused code.
+#![allow(dead_code)]
+
 use std::fmt::Display;
 use std::mem;
 
