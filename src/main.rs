@@ -10,6 +10,7 @@ mod S01_HelloWorld;
 mod S02_Primitives;
 mod S03_CustomTypes;
 mod S04_VariableBindings;
+mod S05_Types;
 
 
 // This is the main function.:q
@@ -19,5 +20,6 @@ fn main() {
   // S01_HelloWorld::chapter_one();
   // S02_Primitives::chapter_two();
   // S03_CustomTypes::chapter_three(); 
- S04_VariableBindings::chapter_four(); 
+//  S04_VariableBindings::chapter_four(); 
+  S05_Types::chapter_five();
 }
