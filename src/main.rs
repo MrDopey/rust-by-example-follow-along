@@ -13,7 +13,7 @@ mod S04_VariableBindings;
 mod S05_Types;
 mod S06_Conversion;
 mod S07_Expression;
-
+mod S08_FlowOfControl;
 
 // This is the main function.:q
 /// This prints for the docs
@@ -25,5 +25,6 @@ fn main() {
 //  S04_VariableBindings::chapter_four(); 
   // S05_Types::chapter_five();
   // S06_Conversion::chapter_six();
-  S07_Expression::chapter_seven();
+  // S07_Expression::chapter_seven();
+  S08_FlowOfControl::chapter_eight();
 }
