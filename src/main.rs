@@ -12,6 +12,7 @@ mod S03_CustomTypes;
 mod S04_VariableBindings;
 mod S05_Types;
 mod S06_Conversion;
+mod S07_Expression;
 
 
 // This is the main function.:q
@@ -23,5 +24,6 @@ fn main() {
   // S03_CustomTypes::chapter_three(); 
 //  S04_VariableBindings::chapter_four(); 
   // S05_Types::chapter_five();
-  S06_Conversion::chapter_six();
+  // S06_Conversion::chapter_six();
+  S07_Expression::chapter_seven();
 }
