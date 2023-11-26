@@ -25,14 +25,19 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "./.devcontainer/post-create.sh",
 
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"rust-lang.rust-analyzer"
-			]
+			],
+			"settings": {
+				"[rust]": {
+					"editor.formatOnSave": true
+				}
+			}
 		}
 	},
 

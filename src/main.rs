@@ -15,6 +15,7 @@ mod S06_Conversion;
 mod S07_Expression;
 mod S08_FlowOfControl;
 mod S09_Functions;
+mod S10_Modules;
 
 // This is the main function.:q
 /// This prints for the docs
@@ -28,5 +29,6 @@ fn main() {
   // S06_Conversion::chapter_six();
   // S07_Expression::chapter_seven();
   // S08_FlowOfControl::chapter_eight();
-  S09_Functions::chapter_nine();
+  // S09_Functions::chapter_nine();
+  S10_Modules::chapter_ten();
 }
